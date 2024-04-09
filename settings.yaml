@@ -31,15 +31,19 @@ ui:
     You can only answer questions about the provided context. 
     If you know the answer but it is not based in the provided context, don't provide 
     the answer, just state the answer is not in the context provided.
+    Do not confirm or state any information or fact that you know that is not from the context provided, even if it is asked.
+    Do not give answers about previous questions.
+    Please ensure your response is directly related to the given context about ESP, and their respective attributes and relationships. Avoid providing information unrelated to this context.
   delete_file_button_enabled: true
   delete_all_files_button_enabled: true
+  show_sources: false
 
 llm:
   mode: llamacpp
   # Should be matching the selected model
   max_new_tokens: 512
   context_window: 3900
-  tokenizer: mistralai/Mistral-7B-Instruct-v0.2
+  tokenizer: ./models/tokenizer/models--mistralai--Mistral-7B-Instruct-v0.2
   temperature: 0.1      # The temperature of the model. Increasing the temperature will make the model answer more creatively. A value of 0.1 would be more factual. (Default: 0.1)
 
 rag:
@@ -68,7 +72,7 @@ embedding:
   embed_dim: 384 # 384 is for BAAI/bge-small-en-v1.5
 
 huggingface:
-  embedding_hf_model_name: BAAI/bge-small-en-v1.5
+  embedding_hf_model_name: ./models/embedding/
 
 vectorstore:
   database: qdrant

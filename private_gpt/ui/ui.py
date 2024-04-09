@@ -97,7 +97,7 @@ class PrivateGptUi:
                 yield full_response
                 time.sleep(0.02)
 
-            if completion_gen.sources:
+            if completion_gen.sources and settings().ui.show_sources:
                 full_response += SOURCES_SEPARATOR
                 cur_sources = Source.curate_sources(completion_gen.sources)
                 sources_text = "\n\n\n"

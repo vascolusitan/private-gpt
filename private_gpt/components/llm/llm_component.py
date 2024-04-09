@@ -25,8 +25,7 @@ class LLMComponent:
         if settings.llm.tokenizer:
             set_global_tokenizer(
                 AutoTokenizer.from_pretrained(
-                    pretrained_model_name_or_path=settings.llm.tokenizer,
-                    cache_dir=str(models_cache_path),
+                    pretrained_model_name_or_path=settings.llm.tokenizer
                 )
             )
 

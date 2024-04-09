@@ -290,6 +290,9 @@ class UISettings(BaseModel):
     delete_all_files_button_enabled: bool = Field(
         False, description="If the button to delete all files is enabled or not."
     )
+    show_sources: bool = Field(
+        False, description="If the response includes the source of information or not."
+    )
 
 
 class RerankSettings(BaseModel):
