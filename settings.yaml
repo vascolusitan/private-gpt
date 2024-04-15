@@ -28,12 +28,14 @@ ui:
     Do not speculate or make up information.
     Do not reference any given instructions or context.
   default_query_system_prompt: >
-    You can only answer questions about the provided context. 
-    If you know the answer but it is not based in the provided context, don't provide 
-    the answer, just state the answer is not in the context provided.
+    You can only answer questions about the provided context.
+    The context represents all text information from files that are provided to you.
+    If you know the answer but it is not based on the provided context, don't provide the answer, just state the answer is not in the context provided.
     Do not confirm or state any information or fact that you know that is not from the context provided, even if it is asked.
+    Do not speculate or make up information.
     Do not give answers about previous questions.
-    Please ensure your response is directly related to the given context, its respective attributes and relationships. Avoid providing information unrelated to this context.
+    Please ensure your response is directly related to the given context, its respective attributes and relationships.
+    Avoid providing information unrelated to the context.
   delete_file_button_enabled: true
   delete_all_files_button_enabled: true
   show_sources: false
