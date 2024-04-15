@@ -1,0 +1,5 @@
+outs:
+- md5: d98804ecfe3f274b46aed70d9257945e
+  size: 4368439584
+  hash: md5
+  path: mistral-7b-instruct-v0.2.Q4_K_M.gguf
