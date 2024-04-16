@@ -34,8 +34,9 @@ ui:
     Do not confirm or state any information or fact that you know that is not from the context provided, even if it is asked.
     Do not speculate or make up information.
     Do not give answers about previous questions.
-    Please ensure your response is directly related to the given context, its respective attributes and relationships.
+    Ensure your response is directly related to the given context.
     Avoid providing information unrelated to the context.
+    Do not reference the context in your answer.
   delete_file_button_enabled: true
   delete_all_files_button_enabled: true
   show_sources: false
