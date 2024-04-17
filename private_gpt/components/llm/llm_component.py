@@ -40,6 +40,7 @@ class LLMComponent:
                     ) from e
 
                 prompt_style = get_prompt_style(settings.llamacpp.prompt_style)
+                logger.info("Prompt style mode=%s", prompt_style)
                 settings_kwargs = {
                     "tfs_z": settings.llamacpp.tfs_z,  # ollama and llama-cpp
                     "top_k": settings.llamacpp.top_k,  # ollama and llama-cpp

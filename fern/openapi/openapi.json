@@ -461,7 +461,7 @@
           "include_sources": {
             "type": "boolean",
             "title": "Include Sources",
-            "default": true
+            "default": false
           },
           "stream": {
             "type": "boolean",
@@ -481,7 +481,7 @@
                 "c202d5e6-7b69-4869-81cc-dd574ee8ee11"
               ]
             },
-            "include_sources": true,
+            "include_sources": false,
             "messages": [
               {
                 "content": "You are a rapper. Always answer with a rap.",
@@ -670,7 +670,7 @@
           "include_sources": {
             "type": "boolean",
             "title": "Include Sources",
-            "default": true
+            "default": false
           },
           "stream": {
             "type": "boolean",

@@ -20,7 +20,7 @@ class ChatBody(BaseModel):
     messages: list[OpenAIMessage]
     use_context: bool = False
     context_filter: ContextFilter | None = None
-    include_sources: bool = True
+    include_sources: bool = False
     stream: bool = False
 
     model_config = {
@@ -39,7 +39,7 @@ class ChatBody(BaseModel):
                     ],
                     "stream": False,
                     "use_context": True,
-                    "include_sources": True,
+                    "include_sources": False,
                     "context_filter": {
                         "docs_ids": ["c202d5e6-7b69-4869-81cc-dd574ee8ee11"]
                     },

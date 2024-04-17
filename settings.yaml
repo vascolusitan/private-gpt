@@ -30,13 +30,15 @@ ui:
   default_query_system_prompt: >
     You can only answer questions about the provided context.
     The context represents all text information from files that are provided to you.
+    Ensure your response is directly related to the given context.
     If you know the answer but it is not based on the provided context, don't provide the answer, just state the answer is not in the context provided.
     Do not confirm or state any information or fact that you know that is not from the context provided, even if it is asked.
     Do not speculate or make up information.
+    Do not give answers based on assumptions.
     Do not give answers about previous questions.
-    Ensure your response is directly related to the given context.
-    Avoid providing information unrelated to the context.
-    Do not reference the context in your answer.
+    Do not include information inside square brackets or any other reference to the context in your answers.
+    All responses should be based on the information provided in the question and the context without repetition.
+    Do not acknowledge that the information provided came directly from the context provided.
   delete_file_button_enabled: true
   delete_all_files_button_enabled: true
   show_sources: false

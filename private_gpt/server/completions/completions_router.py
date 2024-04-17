@@ -18,7 +18,7 @@ class CompletionsBody(BaseModel):
     system_prompt: str | None = None
     use_context: bool = False
     context_filter: ContextFilter | None = None
-    include_sources: bool = True
+    include_sources: bool = False
     stream: bool = False
 
     model_config = {
